@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #17072B;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: Tahoma;
+}
+
+nav {
+  background: #17072B;
+  padding: 1rem;
+}
+
+nav ul {
+  font-size: 30px;
+  font-family: Tahoma;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  width: 100%;
+}
+
+.welcome {
+  flex: 2;
+  font-family: Arial;
+}
+
+.welcome h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 20px;
+  max-width: 85%;
+  margin-bottom: 15px;
+  font-family: Arial;
+}
+
+.welcome img {
+  width: 86%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.lineup {
+  flex: 1;
+  background-color: #172d67;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+}
+
+.lineup h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.lineup ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.lineup li {
+  margin-bottom: 20px;
+}
+
+.lineup-images {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.lineup-images img {
+  width: 85%;
+  max-width: 200px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background: #8c15e9;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px;
+}
