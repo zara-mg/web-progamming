@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petrol Calculator</title>
+</head>
+
+<body>
+
+<h1> Petrol Calculator</h1>
+
+<p>
+    <label for="Liter">Enter Liter:</label>
+    <input id="liter" type="number" min="0" max="10000" value="0"></p>
+<p>
+    <label for="costper">Cost per Unit of Petrol:</label>
+    <input id="costper" type="number" value="1.72"></p>
+
+<h2 id="Purchase"></h2>
+
+<div class="button">
+<button onclick="computeCost()">Calculate</button>
+</div>
+
+<script>
+  function computeCost() {
+    var liter = parseFloat (document.getElementById('liter').value);
+    var costper = parseFloat (document.getElementById('costper').value);
+    var totalCost = (liter * costper).toFixed(2);
+
+  document.getElementById('Purchase').innerHTML = "Total Cost of Purchased Petrol: $" + totalCost;
+  }
+
+</script>
+
+
+</body>
+</html>
