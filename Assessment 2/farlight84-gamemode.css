@@ -1,0 +1,126 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+ max-width: 150px;
+ align-content: left;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #00ffd5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+main {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.game-modes-page {
+padding: 8rem 2rem 4rem;
+background: #0a0a0a;
+min-height: 100vh;
+}
+
+.game-modes-header {
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.game-modes-header h1 {
+font-size: 3rem;
+color: #00ffd5;
+margin-bottom: 0.5rem;
+}
+
+.game-modes-header p {
+font-size: 1.2rem;
+color: #ccc;
+}
+
+.modes-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.mode-card {
+background: linear-gradient(145deg, #111, #1a1a1a);
+border: 1px solid #222;
+border-radius: 12px;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+text-align: center;
+cursor: pointer;
+}
+
+.mode-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 0 20px rgba(0, 255, 213, 0.2);
+}
+
+.mode-card img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.mode-card h3 {
+font-size: 1.5rem;
+color: #fff;
+margin: 1rem 0 0.5rem;
+}
+
+.mode-card p {
+font-size: 1rem;
+color: #aaa;
+padding: 0 1rem 1rem;
+text-align: justify;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #111;
+  border-top: 1px solid #222;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2rem;
+}
